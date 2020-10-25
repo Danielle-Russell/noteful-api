@@ -8,7 +8,7 @@ const jsonParser = express.json()
 
 const sanitizeNote = note => ({
 	...note,
-	note_name: xss(note.name),
+	note_name: xss(note.note_name),
 	content: xss(note.content)
 })
 
