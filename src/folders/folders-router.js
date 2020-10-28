@@ -8,7 +8,7 @@ const jsonParser = express.json()
 
 const sanitizeFolder = folder => ({
 	...folder,
-	name: xss(folder.name)
+	folder_name: xss(folder.folder_name)
 })
 
 foldersRouter
